@@ -1,0 +1,351 @@
+@import '../variables/variables.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: $fullWindowHeight;
+}
+
+.box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.box-wrap {
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 940px;
+  width: 90%;
+}
+
+.box-content {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.box-centered, .box-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box-between {
+  justify-content: space-between;
+}
+
+.box-centered img {
+  width: 15%;
+}
+
+.card {
+  display: flex;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  flex-basis: 48%;
+  margin-bottom: 2%;
+  width: 48%;
+}
+
+.blurCard {
+  opacity: .8;
+}
+
+.box-photo {
+  background-image: $genericCard;
+  border-radius: 10px 0 0 10px;
+  padding: 1em;
+  flex-basis: 40%;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+}
+
+.Gryffindor {
+  background-image: $gryffindorCard;
+}
+
+.Slytherin {
+  background-image: $slytherynCard;
+}
+
+.Hufflepuff {
+  background-image: $hufflePuffCard;
+}
+
+.Ravenclaw {
+  background-image: $ravenClawCard;
+}
+
+.photo-card {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-card img{
+  border-radius: 50%;
+  width: 100%;
+  height: 147px;
+  object-fit: cover;
+  object-position: top;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.box-info {
+  background-color: $white;
+  border-radius: 0 10px 10px 0;
+  flex-basis: 60%;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  padding: 1em;
+}
+
+.box-actions {
+  font-size: $midBig;
+  position: fixed;
+  top: 0;
+  right: 10%;
+}
+
+.btn-action {
+  background-color: $purple;
+  border-radius: 0 0 0 10px;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  outline: 0;
+  padding: 0.5em 1em;
+  -webkit-border-radius: 0 0 0 10px;
+  -moz-border-radius: 0 0 0 10px;
+  -ms-border-radius: 0 0 0 10px;
+  -o-border-radius: 0 0 0 10px;
+}
+
+.btn-add {
+  border-radius: 0 0 10px 0;
+  border-left: 1px solid $black;
+  -webkit-border-radius: 0 0 10px 0;
+  -moz-border-radius: 0 0 10px 0;
+  -ms-border-radius: 0 0 10px 0;
+  -o-border-radius: 0 0 10px 0;
+}
+
+.btn-bookmark {
+  background: none;
+  border: 0;
+  color: $lightGray;
+  cursor: pointer;
+  font-size: $medium;
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-1, .mb-1 {
+  margin-top: 1em;
+}
+
+.mt-2, .mb-2 {
+  margin-top: 2em;
+}
+
+.mt-3, .mb-3 {
+  margin-top: 3em;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-title {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.text-small {
+  font-size: $small;
+}
+
+.text-big {
+  font-size: $big;
+}
+
+.title-card {
+  color: $gray;
+  font-size: $small;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.name-card {
+  font-size: $big;
+  margin: .5em 0 1em 0;
+}
+
+.description-card {
+  font-size: $small;
+  line-height: .7;
+}
+
+.btn-primary {
+  background-color: $backgroundBtnPrimary;
+  border: 2px solid $purple;
+  color: $white;
+  cursor: pointer;
+  font-size: .8em;
+  font-weight: 600;
+  margin-right: 2em;
+  padding: 1em;
+  outline: 0;
+  text-transform: uppercase;
+  width: 176px;
+}
+
+.btn-primary:hover {
+  background-color: $purpleHover;
+}
+
+.btn-primary:active {
+  background-color: $purple;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .box {
+    padding: 1em;
+  }
+
+  .box-between {
+    width: 100%;
+  }
+
+  .box-between div {
+    flex-basis: 49%;
+  }
+
+  .btn-primary {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .box-centered img {
+    width: 50%;
+  }
+
+  .text-title {
+    font-size: 1.4em;
+  }
+
+  .box-wrap {
+    width: auto;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .photo-card img {
+    height: 97px;
+    width: 70%;
+  }
+
+  .box-photo {
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+  }
+
+  .box-info {
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+  }
+
+  .name-card {
+    font-size: $midBig;
+    text-align: center;
+  }
+
+  .card-header {
+    order: 2;
+  }
+
+  .box-description {
+    display: none;
+  }
+
+  .box-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-actions {
+    top: initial;
+    bottom: 0;
+    right: initial;
+    z-index: 1;
+  }
+
+  .btn-action {
+    border-radius: 10px 0 0 0;
+    -webkit-border-radius: 10px 0 0 0;
+    -moz-border-radius: 10px 0 0 0;
+    -ms-border-radius: 10px 0 0 0;
+    -o-border-radius: 10px 0 0 0;
+  }
+
+  .btn-add {
+    border-radius: 0 10px 0 0;
+    -webkit-border-radius: 0 10px 0 0;
+    -moz-border-radius: 0 10px 0 0;
+    -ms-border-radius: 0 10px 0 0;
+    -o-border-radius: 0 10px 0 0;
+}
+}
