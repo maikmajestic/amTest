@@ -149,12 +149,21 @@ code {
 }
 
 .btn-add {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0 0 10px 0;
   border-left: 1px solid $black;
   -webkit-border-radius: 0 0 10px 0;
   -moz-border-radius: 0 0 10px 0;
   -ms-border-radius: 0 0 10px 0;
   -o-border-radius: 0 0 10px 0;
+}
+
+.btn-remove {
+  background: none;
+}
+
+.btn-fav {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn-bookmark {
@@ -164,6 +173,10 @@ code {
   cursor: pointer;
   font-size: $medium;
   outline: 0;
+}
+
+.btn-bookmark.--bookmarked {
+  color: $black;
 }
 
 img {
@@ -247,6 +260,67 @@ img {
   background-color: $purple;
 }
 
+.toolbar-content {
+  border-radius: 0 0 10px 10px;
+  color: $white;
+  display: flex;
+  background: $purple;
+  margin-top: -10px;
+  padding-top: 1em;
+  flex-direction: column;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  position: fixed;
+  top: 30px;
+  width: 20.7%;
+  right: 10%;
+  z-index: 1;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.toolbar-content img {
+  border-radius: 50%;
+  width: 100%;
+  height: 25px;
+  object-fit: cover;
+  object-position: top;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.toolbar-item {
+  border-bottom: 1px solid $darkPurple;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.2em;
+}
+
+.toolbar-item img {
+  flex-basis: 15%;
+}
+
+.toolbar-item span {
+  flex-basis: 70%;
+  padding-left: .5em;
+}
+
+.toolbar-item:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+
 @media only screen and (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -327,10 +401,12 @@ img {
   }
 
   .box-actions {
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
     top: initial;
     bottom: 0;
     right: initial;
     z-index: 1;
+    width: 92%;
   }
 
   .btn-action {
@@ -341,11 +417,33 @@ img {
     -o-border-radius: 10px 0 0 0;
   }
 
+  .toolbar-item {
+    height: 4em;
+  }
+
+  .toolbar-content {
+    bottom: 15px;
+    padding-bottom: 1em;
+    padding-top: 0;
+    right: initial;
+    top: initial;
+    width: 92%;
+  }
+
+  .toolbar-content img {
+    height: 53px;
+  }
+
   .btn-add {
     border-radius: 0 10px 0 0;
     -webkit-border-radius: 0 10px 0 0;
     -moz-border-radius: 0 10px 0 0;
     -ms-border-radius: 0 10px 0 0;
     -o-border-radius: 0 10px 0 0;
-}
+    width: 50%;
+  }
+
+  .btn-fav {
+    width: 50%;
+  }
 }

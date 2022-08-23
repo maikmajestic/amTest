@@ -10,15 +10,22 @@
       "ancestry": "half-blood",
       "eyeColour": "green",
       "hairColour": "black",
-      "wand": { "wood": "holly", "core": "phoenix feather", "length": 11 },
+      "wand": {
+        "wood": "holly",
+        "core": "phoenix feather",
+        "length": 11
+      },
       "patronus": "stag",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Daniel Radcliffe",
       "alive": true,
-      "image": "http://hp-api.herokuapp.com/images/harry.jpg"
+      "image": "http://hp-api.herokuapp.com/images/harry.jpg",
+      "bookmarked": true,
+      "id": 0
     },
     {
+      "id": 1,
       "name": "Hermione Granger",
       "species": "human",
       "gender": "female",
@@ -28,7 +35,11 @@
       "ancestry": "muggleborn",
       "eyeColour": "brown",
       "hairColour": "brown",
-      "wand": { "wood": "vine", "core": "dragon heartstring", "length": "" },
+      "wand": {
+        "wood": "vine",
+        "core": "dragon heartstring",
+        "length": ""
+      },
       "patronus": "otter",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -46,7 +57,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "blue",
       "hairColour": "red",
-      "wand": { "wood": "willow", "core": "unicorn tail-hair", "length": 14 },
+      "wand": {
+        "wood": "willow",
+        "core": "unicorn tail-hair",
+        "length": 14
+      },
       "patronus": "Jack Russell terrier",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -64,7 +79,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "grey",
       "hairColour": "blonde",
-      "wand": { "wood": "hawthorn", "core": "unicorn tail-hair", "length": 10 },
+      "wand": {
+        "wood": "hawthorn",
+        "core": "unicorn tail-hair",
+        "length": 10
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -82,7 +101,11 @@
       "ancestry": "",
       "eyeColour": "",
       "hairColour": "black",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "tabby cat",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -100,7 +123,11 @@
       "ancestry": "",
       "eyeColour": "grey",
       "hairColour": "brown",
-      "wand": { "wood": "ash", "core": "unicorn hair", "length": 12.25 },
+      "wand": {
+        "wood": "ash",
+        "core": "unicorn hair",
+        "length": 12.25
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -118,7 +145,11 @@
       "ancestry": "",
       "eyeColour": "brown",
       "hairColour": "black",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "swan",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -136,7 +167,11 @@
       "ancestry": "half-blood",
       "eyeColour": "black",
       "hairColour": "black",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "doe",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -154,7 +189,11 @@
       "ancestry": "half-blood",
       "eyeColour": "black",
       "hairColour": "black",
-      "wand": { "wood": "oak", "core": "", "length": 16 },
+      "wand": {
+        "wood": "oak",
+        "core": "",
+        "length": 16
+      },
       "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -172,7 +211,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "",
       "hairColour": "blonde",
-      "wand": { "wood": "cherry", "core": "unicorn tail-hair", "length": 13 },
+      "wand": {
+        "wood": "cherry",
+        "core": "unicorn tail-hair",
+        "length": 13
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -190,7 +233,11 @@
       "ancestry": "",
       "eyeColour": "grey",
       "hairColour": "blonde",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "hare",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -208,7 +255,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "brown",
       "hairColour": "red",
-      "wand": { "wood": "yew", "core": "", "length": "" },
+      "wand": {
+        "wood": "yew",
+        "core": "",
+        "length": ""
+      },
       "patronus": "horse",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -226,7 +277,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "grey",
       "hairColour": "black",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "hare",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
@@ -266,7 +321,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "blue",
       "hairColour": "red",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "weasel",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
@@ -306,7 +365,11 @@
       "ancestry": "half-blood",
       "eyeColour": "red",
       "hairColour": "bald",
-      "wand": { "wood": "yew", "core": "phoenix feather", "length": 13.5 },
+      "wand": {
+        "wood": "yew",
+        "core": "phoenix feather",
+        "length": 13.5
+      },
       "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
@@ -346,7 +409,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "brown",
       "hairColour": "brown",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "lynx",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
@@ -364,7 +431,11 @@
       "ancestry": "half-blood",
       "eyeColour": "brown",
       "hairColour": "grey",
-      "wand": { "wood": "birch", "core": "dragon heartstring", "length": 8 },
+      "wand": {
+        "wood": "birch",
+        "core": "dragon heartstring",
+        "length": 8
+      },
       "patronus": "persian cat",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -382,7 +453,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "grey",
       "hairColour": "blonde",
-      "wand": { "wood": "elm", "core": "dragon heartstring", "length": 18 },
+      "wand": {
+        "wood": "elm",
+        "core": "dragon heartstring",
+        "length": 18
+      },
       "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": false,
@@ -400,7 +475,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "black",
       "hairColour": "black",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -418,7 +497,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "",
       "hairColour": "brown",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -436,7 +519,11 @@
       "ancestry": "",
       "eyeColour": "yellow",
       "hairColour": "brown",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -454,7 +541,11 @@
       "ancestry": "squib",
       "eyeColour": "",
       "hairColour": "grey",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -474,7 +565,11 @@
       "ancestry": "",
       "eyeColour": "",
       "hairColour": "black",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "tabby cat",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -492,7 +587,11 @@
       "ancestry": "half-blood",
       "eyeColour": "black",
       "hairColour": "black",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "doe",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -510,7 +609,11 @@
       "ancestry": "half-blood",
       "eyeColour": "black",
       "hairColour": "black",
-      "wand": { "wood": "oak", "core": "", "length": 16 },
+      "wand": {
+        "wood": "oak",
+        "core": "",
+        "length": 16
+      },
       "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -572,7 +675,11 @@
       "ancestry": "half-blood",
       "eyeColour": "brown",
       "hairColour": "grey",
-      "wand": { "wood": "birch", "core": "dragon heartstring", "length": 8 },
+      "wand": {
+        "wood": "birch",
+        "core": "dragon heartstring",
+        "length": 8
+      },
       "patronus": "persian cat",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -590,7 +697,11 @@
       "ancestry": "",
       "eyeColour": "yellow",
       "hairColour": "brown",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -608,7 +719,11 @@
       "ancestry": "squib",
       "eyeColour": "",
       "hairColour": "grey",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "",
       "hogwartsStudent": false,
       "hogwartsStaff": true,
@@ -619,6 +734,7 @@
   ],
   "students": [
     {
+      "id": 0,
       "name": "Harry Potter",
       "species": "human",
       "gender": "male",
@@ -628,13 +744,18 @@
       "ancestry": "half-blood",
       "eyeColour": "green",
       "hairColour": "black",
-      "wand": { "wood": "holly", "core": "phoenix feather", "length": 11 },
+      "wand": {
+        "wood": "holly",
+        "core": "phoenix feather",
+        "length": 11
+      },
       "patronus": "stag",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
       "actor": "Daniel Radcliffe",
       "alive": true,
-      "image": "http://hp-api.herokuapp.com/images/harry.jpg"
+      "image": "http://hp-api.herokuapp.com/images/harry.jpg",
+      "bookmarked": true
     },
     {
       "name": "Hermione Granger",
@@ -646,7 +767,11 @@
       "ancestry": "muggleborn",
       "eyeColour": "brown",
       "hairColour": "brown",
-      "wand": { "wood": "vine", "core": "dragon heartstring", "length": "" },
+      "wand": {
+        "wood": "vine",
+        "core": "dragon heartstring",
+        "length": ""
+      },
       "patronus": "otter",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -664,7 +789,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "blue",
       "hairColour": "red",
-      "wand": { "wood": "willow", "core": "unicorn tail-hair", "length": 14 },
+      "wand": {
+        "wood": "willow",
+        "core": "unicorn tail-hair",
+        "length": 14
+      },
       "patronus": "Jack Russell terrier",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -682,7 +811,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "grey",
       "hairColour": "blonde",
-      "wand": { "wood": "hawthorn", "core": "unicorn tail-hair", "length": 10 },
+      "wand": {
+        "wood": "hawthorn",
+        "core": "unicorn tail-hair",
+        "length": 10
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -700,7 +833,11 @@
       "ancestry": "",
       "eyeColour": "grey",
       "hairColour": "brown",
-      "wand": { "wood": "ash", "core": "unicorn hair", "length": 12.25 },
+      "wand": {
+        "wood": "ash",
+        "core": "unicorn hair",
+        "length": 12.25
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -718,7 +855,11 @@
       "ancestry": "",
       "eyeColour": "brown",
       "hairColour": "black",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "swan",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -736,7 +877,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "",
       "hairColour": "blonde",
-      "wand": { "wood": "cherry", "core": "unicorn tail-hair", "length": 13 },
+      "wand": {
+        "wood": "cherry",
+        "core": "unicorn tail-hair",
+        "length": 13
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -754,7 +899,11 @@
       "ancestry": "",
       "eyeColour": "grey",
       "hairColour": "blonde",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "hare",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -772,7 +921,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "brown",
       "hairColour": "red",
-      "wand": { "wood": "yew", "core": "", "length": "" },
+      "wand": {
+        "wood": "yew",
+        "core": "",
+        "length": ""
+      },
       "patronus": "horse",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -790,7 +943,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "black",
       "hairColour": "black",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,
@@ -808,7 +965,11 @@
       "ancestry": "pure-blood",
       "eyeColour": "",
       "hairColour": "brown",
-      "wand": { "wood": "", "core": "", "length": "" },
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
       "patronus": "",
       "hogwartsStudent": true,
       "hogwartsStaff": false,

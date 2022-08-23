@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FaRegBookmark, FaCross } from 'react-icons/fa';
+import { FaBookmark, FaRegBookmark, FaCross } from 'react-icons/fa';
+import axios from 'axios';
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ data }) => {
@@ -8,6 +9,13 @@ const Card = ({ data }) => {
   useEffect(() => {
     setDat(data);
   }, [data]);
+
+  const handleBookmark = (payload, id) => {
+    payload.bookmarked = true;
+    axios.put(`//localhost:8000/students/${id}`, payload).then((response) => {
+      console.log(response.data);
+    });
+  };
 
   return (
     <>
@@ -22,7 +30,7 @@ const Card = ({ data }) => {
             <div className="box-info">
               <div className="card-header">
                 <span className="title-card">{character.alive ? 'Vivo' : 'Muerto'}{character.hogwartsStudent ? ' / ' + 'Estudiante' : ' / ' + 'Maestro'}</span>
-                <button className="btn-bookmark"><FaRegBookmark/></button>
+                <button className={`btn-bookmark ${character.bookmarked ? '--bookmarked' : ''}`} onClick={() => handleBookmark(character, index)}>{character.bookmarked ? <FaBookmark/> : <FaRegBookmark/>}</button>
               </div>
               <h4 className="name-card">{!character.alive ? <FaCross/> : ''}{character.name}</h4>
               <div className="box-description">
