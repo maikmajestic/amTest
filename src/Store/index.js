@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import favsReducer from './features/favs/favsSlice';
+import Bookmarks from  './Slices/Bookmarks';
+import Students from './Slices/Students';
+import Staff from './Slices/Staff';
 
 export const store = configureStore({
   reducer: {
-    favs: favsReducer
+    Bookmarks,
+    Students,
+    Staff
   },
 });

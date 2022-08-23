@@ -3,18 +3,29 @@ import { FaBookmark, FaRegBookmark, FaCross } from 'react-icons/fa';
 import axios from 'axios';
 
 // eslint-disable-next-line react/prop-types
-const Card = ({ data }) => {
+const Card = ({ data, setIsLoading }) => {
   const [dat, setDat] = useState(data);
 
   useEffect(() => {
     setDat(data);
   }, [data]);
 
-  const handleBookmark = (payload, id) => {
-    payload.bookmarked = true;
-    axios.put(`//localhost:8000/students/${id}`, payload).then((response) => {
-      console.log(response.data);
-    });
+  const handleBookmark = async (character, id, value) => {
+    setIsLoading(true);
+    var payload = JSON.parse(JSON.stringify(character));
+    payload['bookmarked'] = value;
+    Object.preventExtensions(payload);
+    if(payload.hogwartsStudent) {
+      await axios.put(`//localhost:8000/students/${id}`, payload).then((response) => {
+        console.log(response.data);
+        setTimeout(() => setIsLoading(false), 1000);
+      });
+    } else {
+      await axios.put(`//localhost:8000/staff/${id}`, payload).then((response) => {
+        console.log(response.data);
+        setTimeout(() => setIsLoading(false), 1000);
+      });
+    }
   };
 
   return (
@@ -30,7 +41,7 @@ const Card = ({ data }) => {
             <div className="box-info">
               <div className="card-header">
                 <span className="title-card">{character.alive ? 'Vivo' : 'Muerto'}{character.hogwartsStudent ? ' / ' + 'Estudiante' : ' / ' + 'Maestro'}</span>
-                <button className={`btn-bookmark ${character.bookmarked ? '--bookmarked' : ''}`} onClick={() => handleBookmark(character, index)}>{character.bookmarked ? <FaBookmark/> : <FaRegBookmark/>}</button>
+                <button className={`btn-bookmark ${character.bookmarked ? '--bookmarked' : ''}`} onClick={() => handleBookmark(character, index, character.bookmarked ? false : true)}>{character.bookmarked ? <FaBookmark/> : <FaRegBookmark/>}</button>
               </div>
               <h4 className="name-card">{!character.alive ? <FaCross/> : ''}{character.name}</h4>
               <div className="box-description">

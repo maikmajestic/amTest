@@ -132,6 +132,7 @@ code {
   position: fixed;
   top: 0;
   right: 10%;
+  z-index: 1;
 }
 
 .btn-action {
@@ -192,16 +193,28 @@ img {
   margin: 0;
 }
 
-.mt-1, .mb-1 {
+.mt-1 {
   margin-top: 1em;
 }
 
-.mt-2, .mb-2 {
+.mt-2 {
   margin-top: 2em;
 }
 
-.mt-3, .mb-3 {
+.mt-3 {
   margin-top: 3em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
 }
 
 .text-white {
@@ -274,7 +287,7 @@ img {
   -o-border-radius: 0 0 10px 10px;
   position: fixed;
   top: 30px;
-  width: 20.7%;
+  width: 190.5px;
   right: 10%;
   z-index: 1;
 }
@@ -415,6 +428,7 @@ img {
     -moz-border-radius: 10px 0 0 0;
     -ms-border-radius: 10px 0 0 0;
     -o-border-radius: 10px 0 0 0;
+    padding: 1em;
   }
 
   .toolbar-item {
@@ -423,7 +437,7 @@ img {
 
   .toolbar-content {
     bottom: 15px;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     padding-top: 0;
     right: initial;
     top: initial;
