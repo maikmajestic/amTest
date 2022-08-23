@@ -1,0 +1,8 @@
+@import '../variables/variables.scss';
+
+.home-container {
+  background-image: $backgroundHome;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}

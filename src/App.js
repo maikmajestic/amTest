@@ -1,13 +1,8 @@
-import './Styles/Body.min.css';
+import Home from './Pages/Home';
+import './Styles/grid/grid.min.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello Hogwarts!</h1>
-      </header>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
