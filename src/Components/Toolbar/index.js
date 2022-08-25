@@ -28,6 +28,11 @@ function Toolbar({ setShowModal, setIsLoading }) {
   return (
     <>
       <div className={`toolbar-content ${!display ? 'display-none' : ''}`}>
+        {bookmarkList.length === 0 && (
+          <div className="toolbar-item">
+            <span>Sin elementos</span>
+          </div>
+        )}
         {bookmarkList.map((item) => {
           return (
             <div className="toolbar-item" key={item.id}>
