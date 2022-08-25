@@ -1,25 +1,46 @@
-import React, { useState }from 'react';
+import React, { useState, useEffect }from 'react';
 import { FaBookmark, FaUserPlus, FaTrashAlt } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
+import { bookmarking } from '../../Services';
 
-function Toolbar() {
+// eslint-disable-next-line react/prop-types
+function Toolbar({ setShowModal, setIsLoading }) {
+  const { bookmarks }  = useSelector(state => state.Characters);
   const [display, setDisplay] = useState(false);
+  const [bookmarkList, setBookmarkList] = useState([]);
+
+  useEffect(() => {
+    const getData = () => {
+      setBookmarkList(bookmarks);
+    };
+    
+    getData();
+    
+  }, [bookmarks]);
+
+  const handleBookmark = async (character) => {
+    setIsLoading(true);
+    const addingFav = await bookmarking(character);
+    addingFav.status === 200 ? '' : console.log('');
+    setTimeout(() => setIsLoading(false), 1000);
+  };
+
   return (
     <>
       <div className={`toolbar-content ${!display ? 'display-none' : ''}`}>
-        <div className="toolbar-item">
-          <img src="http://hp-api.herokuapp.com/images/harry.jpg"/>
-          <span>name</span>
-          <button className="btn btn-action btn-remove"><FaTrashAlt/></button>
-        </div>
-        <div className="toolbar-item">
-          <img src="http://hp-api.herokuapp.com/images/harry.jpg"/>
-          <span>name</span>
-          <button className="btn-action btn-remove"><FaTrashAlt/></button>
-        </div>
+        {bookmarkList.map((item) => {
+          return (
+            <div className="toolbar-item" key={item.id}>
+              <img src={item.image}/>
+              <span>{item.name}</span>
+              <button className="btn btn-action btn-remove" onClick={() => handleBookmark(item)}><FaTrashAlt/></button>
+            </div>
+          );
+        })}
       </div>
       <div className="box-actions">
         <button className="btn-action btn-fav" onClick={() => setDisplay(display ? false : true)}>Favoritos <span><FaBookmark/></span></button>
-        <button className="btn-action btn-add">Agregar <FaUserPlus/></button>
+        <button className="btn-action btn-add" onClick={() => setShowModal(true)}>Agregar <FaUserPlus/></button>
       </div>
     </>
   );
