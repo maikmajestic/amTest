@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../Styles/home/Home.min.css';
 import Toolbar from '../Components/Toolbar';
 import Header from '../Components/Header';
 import Selections from '../Components/Selections';
