@@ -64,6 +64,7 @@ code {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   flex-basis: 48%;
+  height: 200px;
   margin-bottom: 2%;
   width: 48%;
 }
@@ -108,6 +109,18 @@ code {
   border-radius: 50%;
   width: 100%;
   height: 147px;
+  object-fit: cover;
+  object-position: top;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.photo-loading {
+  border-radius: 50%;
+  height: 247px;
+  margin-top: 3em;
   object-fit: cover;
   object-position: top;
   -webkit-border-radius: 50%;
@@ -189,6 +202,10 @@ img {
   justify-content: space-between;
 }
 
+.p-0 {
+  padding: 0;
+}
+
 .m-0 {
   margin: 0;
 }
@@ -234,6 +251,10 @@ img {
   font-size: $big;
 }
 
+.text-midBig {
+  font-size: $midBig;
+} 
+
 .title-card {
   color: $gray;
   font-size: $small;
@@ -271,6 +292,12 @@ img {
 
 .btn-primary:active {
   background-color: $purple;
+}
+
+.btn-primary:disabled, .btn-primary[disabled] {
+  background-color: $backgroundBtnDisabled;
+  border: 0;
+  cursor: not-allowed;
 }
 
 .toolbar-content {
@@ -333,8 +360,117 @@ img {
   border-bottom: 0;
 }
 
+.box-modal {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  z-index: 10000;
+}
 
-@media only screen and (max-width: 768px) {
+.show-modal {
+  display: flex;
+}
+
+.hide-modal {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: 15% auto;
+  padding: 2em;
+  border: 1px solid $gray;
+  height: fit-content;
+  width: 500px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.modal-info {
+  width: 100%;
+  align-items: center;
+}
+
+.close-modal {
+  cursor: pointer;
+  font-size: $big;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 49%;
+  width: 49%;
+}
+
+.box-form {
+  margin-top: 1em;
+  padding: 0;
+  width: 100%;
+}
+
+.input-text, .input-select {
+  background-color: $grayInput;
+  border: 0;
+  border-bottom: 1.5px solid $grayBorder;
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  outline: 0;
+  padding: 0 1em;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+
+.text-input {
+  color: $darkGray;
+  font-size: $midBig;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+}
+
+.input-radio {
+  align-items: center;
+  display: flex;
+}
+
+.box-alert {
+  display: flex;
+  position: absolute;
+  color: $white;
+  top: 1%;
+  left: 2em;
+  border: 2px solid red;
+  background: $alert;
+  width: 305px;
+  opacity: .9;
+  padding: 1em;
+  align-items: center;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.box-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 640px) {
   .container {
     flex-direction: column;
     justify-content: flex-start;
@@ -372,6 +508,7 @@ img {
 
   .card {
     flex-direction: column;
+    height: 235px;
   }
 
   .photo-card img {
@@ -459,5 +596,63 @@ img {
 
   .btn-fav {
     width: 50%;
+  }
+
+  .modal-content{
+    height: 100%;
+    margin: 0;
+  } 
+
+  .box-centered {
+    width: 100%;
+  }  
+
+  .text-radio {
+    font-size: $small;
+  }
+
+  .photo-loading {
+    height: 200px;
+  }
+
+  .box-alert {
+    top: .5%;
+    left: 5%;
+    position: fixed;
+    background: red;
+    opacity: 1;
+    border: 1px solid $white;
+    z-index: 10;
+    width: 80%;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 640px) {
+  .photo-card img {
+    height: 103px;
+    width: 40%;
+  }
+
+  .toolbar-item img {
+    flex-basis: 10%;
+  }
+
+  .toolbar-item span {
+    flex-basis: 75%;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 559px) {
+  .photo-card img {
+    height: 83px;
+    width: 45%;
+  }
+
+  .toolbar-item img {
+    flex-basis: 11%;
+  }
+  
+  .toolbar-item span {
+    flex-basis: 74%;
   }
 }
