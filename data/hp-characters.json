@@ -22,7 +22,7 @@
       "actor": "Daniel Radcliffe",
       "alive": true,
       "image": "http://hp-api.herokuapp.com/images/harry.jpg",
-      "bookmarked": true
+      "bookmarked": false
     },
     {
       "id": 1,
@@ -46,7 +46,7 @@
       "actor": "Emma Watson",
       "alive": true,
       "image": "http://hp-api.herokuapp.com/images/hermione.jpeg",
-      "bookmarked": true
+      "bookmarked": false
     },
     {
       "id": 2,
@@ -70,7 +70,7 @@
       "actor": "Rupert Grint",
       "alive": true,
       "image": "http://hp-api.herokuapp.com/images/ron.jpg",
-      "bookmarked": true
+      "bookmarked": false
     },
     {
       "id": 3,
@@ -188,7 +188,7 @@
       "actor": "Alan Rickman",
       "alive": false,
       "image": "http://hp-api.herokuapp.com/images/snape.jpg",
-      "bookmarked": true
+      "bookmarked": false
     },
     {
       "id": 8,

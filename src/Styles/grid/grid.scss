@@ -69,8 +69,8 @@ code {
   width: 48%;
 }
 
-.blurCard {
-  opacity: .8;
+.blurCard .box-info {
+  background-color: $lightGray;
 }
 
 .box-photo {
@@ -183,7 +183,7 @@ code {
 .btn-bookmark {
   background: none;
   border: 0;
-  color: $lightGray;
+  color: $grayMedium;
   cursor: pointer;
   font-size: $medium;
   outline: 0;
@@ -265,6 +265,10 @@ img {
 .name-card {
   font-size: $big;
   margin: .5em 0 1em 0;
+}
+
+.name-card svg {
+  margin-right: 0.3em;
 }
 
 .description-card {

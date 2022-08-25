@@ -16,6 +16,10 @@ const Card = ({ data, setIsLoading }) => {
 
   const handleBookmark = async (character) => {
     if(!character.bookmarked && bookmarks.length >= 5) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
       setShowAlert(false);
       setTimeout(() => setShowAlert(true), 3000);
     } else{
